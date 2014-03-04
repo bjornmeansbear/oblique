@@ -1,0 +1,4 @@
+oblique
+=======
+
+oblique strategies generator
