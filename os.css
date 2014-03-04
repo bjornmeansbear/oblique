@@ -1,0 +1,40 @@
+
+/* Typography styles and colors
+----------------------------------------------------------------------------------------*/
+body {
+  font-family: Helvetica, Arial, sans-serif; 
+  }
+h1 {
+  font-size: 200%;
+  color: rgb(163,166,143);
+  }  
+#oblique_strategies p {
+  font-size: 400%;
+  font-weight: bold;
+  color: rgb(242,208,145);  
+  }
+#footer  p {
+  font-size: 75%;
+  color: rgb(114,138,140);
+  }
+  
+/* links
+----------------------------------------------------------------------------------------*/
+a { color: rgb(242,208,145); }
+
+/* Layout, alignment, etc.
+----------------------------------------------------------------------------------------*/
+#wrapper { margin: 100px; }
+h1 { margin-bottom: 30px;}
+#footer { margin-top: 100px; }
+
+/* object colors & backgrounds
+----------------------------------------------------------------------------------------*/
+body { background: rgb(47,96,115); }
+h1 {
+  padding-bottom: 10px;
+  border-bottom: 4px solid rgb(191,94,38);
+  }
+#footer {
+  }
+  
