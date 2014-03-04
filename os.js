@@ -1,7 +1,7 @@
 
 $.getJSON('oblique.json', function(data) { 
     
-  var strategy = data[Math.floor(Math.random()*data.length)];
+  var strategy = data.strategies[Math.floor(Math.random()*data.strategies.length)];
   console.log(strategy);
   
 });
