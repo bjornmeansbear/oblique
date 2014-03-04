@@ -6,4 +6,3 @@ $.getJSON('oblique.json', function(data) {
   $("#oblique_strategies p").text(randomStrategy.strategy);
     
 });
-
