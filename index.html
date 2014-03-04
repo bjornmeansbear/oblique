@@ -24,45 +24,18 @@
       <h1>A Random Oblique Strategy:</h1>
       
       <div id='oblique_strategies'>
-        <p>Insert a random strategy here...</p>
       </div>
       
       <div id='footer'>
         <p>&copy; 1975-2014 Brian Eno and Peter Schmidt. This list is compiled from all the available Oblique Strategies ...</p>
       </div>
 
-      <ol id="random-oblique" >
-        <script id="os-template" type="text/x-handlebars-template">
-        <li>
-          <h1>{{cells.A}}</h1>
-        </li>
-        </script>
-      </ol>
     </main>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="jquery.sheetrock.min.js"></script>
-    <!-- Load Handlebars.js from CloudFlare’s CDN. -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js"></script>
-    
-    <script>
-      // Define spreadsheet URL.
-      var mySpreadsheet = 'https://docs.google.com/spreadsheet/ccc?key=0AkOcrE7AI_5TdHItS0pJWk13NndNaEgyVnlFQzA1eFE#gid=0';
-      
-      // Compile the Handlebars template for HR leaders.
-      var osTemplate = Handlebars.compile($('#os-template').html());
-
-      // Load an entire sheet.
-      $('#random-oblique').sheetrock({
-        url: mySpreadsheet,
-        headersOff: true,
-        chunkSize: 0,
-        rowHandler: osTemplate
-      });
-    </script>
+    <script src="os.js"></script>
     
   </body>
 </html>
