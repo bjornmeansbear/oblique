@@ -6,7 +6,7 @@ $.getJSON('oblique.json', function(data) {
   $("#oblique_strategies p").text(randomStrategy.strategy);
 
   $.each(data.strategies, function(data) {
-    $('#fulllist').append('<li class="col-xs-6 col-sm-4 col-md-3 strategy">' + this["strategy"] + '</li>');
+    $('#fulllist').append('<li class="strategy"><p>' + this["strategy"] + '</p></li>');
   });
     
 });
