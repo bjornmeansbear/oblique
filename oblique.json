@@ -34,7 +34,13 @@
             "strategy": "Always the first steps."
         },
         {
+            "strategy": "Animal noises."
+        },
+        {
             "strategy": "Are there sections? Consider transitions."
+        },
+        {
+            "strategy": "Ask a computer program to repeat your last action."
         },
         {
             "strategy": "Ask people to work against their better judgement."
@@ -116,6 +122,9 @@
         },
         {
             "strategy": "Cut a vital connection."
+        },
+        {
+            "strategy": "Cut a virtual connection."
         },
         {
             "strategy": "Decorate, decorate."
@@ -350,6 +359,9 @@
         },
         {
             "strategy": "Make it more sensual."
+        },
+        {
+            "strategy": "Make it more banal."
         },
         {
             "strategy": "Make what’s perfect more human."
@@ -605,9 +617,6 @@
         },
         {
             "strategy": "Would anyone want it?"
-        },
-        {
-            "strategy": "Ask a computer program to do that."
         },
         {
             "strategy": "You are an engineer."
