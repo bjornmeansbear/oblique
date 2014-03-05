@@ -46,8 +46,14 @@ a:hover, .navbar a.brand:hover, ul.nav a:hover {
 
 /* Layout, alignment, etc.
 ----------------------------------------------------------------------------------------*/
-header { margin-bottom: 30px;}
+header {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid rgba(236,64,121,1);
+}
+
 footer { margin-top: 100px; }
+.list footer {margin-bottom: 30px;}
 
 /* object colors & backgrounds
 ----------------------------------------------------------------------------------------*/
@@ -74,11 +80,6 @@ body {
 
 body.random { height: 93%; }
 
-h1 {
-  padding-bottom: 10px;
-  border-bottom: 5px solid rgba(236,64,121,1);
-  }
-    
 .container { height: 100%; }
 
 .outer {
