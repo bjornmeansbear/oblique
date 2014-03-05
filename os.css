@@ -71,18 +71,17 @@ body {
 
 h1 {
   padding-bottom: 10px;
-  border-bottom: 4px solid rgba(236,64,121,1);
+  border-bottom: 5px solid rgba(236,64,121,1);
   }
-  
-#footer {
-  }
-  
+    
 .container { height: 100%; }
 
 .outer {
   width: 100%;
   height: 100%;
 }
+
+#oblique_strategies { cursor: pointer; }
  
 /* The ghost, nudged to maintain perfect centering */
 .outer:before {
