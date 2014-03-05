@@ -53,10 +53,10 @@ header {
   position: relative;
 }
 
-.list header { padding-top: 30px; }
+.listing header { padding-top: 30px; }
 
 footer { margin-top: 100px; }
-.list footer {margin-bottom: 30px;}
+.listing footer {margin-bottom: 30px;}
 
 /* object colors & backgrounds
 ----------------------------------------------------------------------------------------*/
