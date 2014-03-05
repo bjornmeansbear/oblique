@@ -7,6 +7,6 @@ $.getJSON('oblique.json', function(data) {
     
 });
 
-$(body).click(function() {
+$('body').click(function() {
   document.location.reload(true);
 });
