@@ -53,6 +53,8 @@ header {
   position: relative;
 }
 
+.list header { padding-top: 30px; }
+
 footer { margin-top: 100px; }
 .list footer {margin-bottom: 30px;}
 
@@ -92,7 +94,7 @@ body.random { height: 93%; }
 
 p.altview {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   right: 0;
 }
  
