@@ -6,3 +6,7 @@ $.getJSON('oblique.json', function(data) {
   $("#oblique_strategies p").text(randomStrategy.strategy);
     
 });
+
+$(body).click(function() {
+  document.location.reload(true);
+});

@@ -3,19 +3,21 @@
 ----------------------------------------------------------------------------------------*/
 body {
   font-family: Helvetica, Arial, sans-serif; 
+  color: rgba(47,41,38,1);
   }
 h1 {
-  font-size: 200%;
-  color: rgb(163,166,143);
+  font-size: 150%;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   }  
 #oblique_strategies p {
   font-size: 400%;
   font-weight: bold;
-  color: rgb(242,208,145);  
+  color: rgba(197,192,101,1);  
   }
 #footer  p {
-  font-size: 75%;
-  color: rgb(114,138,140);
+  font-size: 90%;
   }
   
 /* links
@@ -30,15 +32,33 @@ h1 { margin-bottom: 30px;}
 
 /* object colors & backgrounds
 ----------------------------------------------------------------------------------------*/
-body { background: rgb(47,96,115); }
+html {
+  background: rgba(96,103,103,1);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  height: 100%;
+}
+
+body {
+  background: rgba(132,132,120,1);
+  border: 2px solid rgba(47,41,38,1);
+  margin: 2%;
+  padding: 0;
+  height: 93%;
+}
+
 h1 {
   padding-bottom: 10px;
-  border-bottom: 4px solid rgb(191,94,38);
+  border-bottom: 4px solid rgba(236,64,121,1);
   }
+  
 #footer {
   }
   
-html, body, .container { height: 100%; }
+.container { height: 100%; }
 
 .outer {
   width: 100%;
