@@ -382,7 +382,7 @@
             "strategy": "Not building a wall but making a brick."
         },
         {
-            "strategy": "Once the search has begun, something will be found."
+            "strategy": "Once the search is in progress, something will be found."
         },
         {
             "strategy": "Only a part, not the whole."
