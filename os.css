@@ -4,31 +4,49 @@
 body {
   font-family: Helvetica, Arial, sans-serif; 
   color: rgba(47,41,38,1);
-  }
+}
+  
 h1 {
   font-size: 150%;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  }  
+}
+  
 #oblique_strategies p {
   font-size: 400%;
   font-weight: bold;
   color: rgba(197,192,101,1);  
-  }
-#footer  p {
+}
+  
+footer  p {
   font-size: 90%;
-  }
+}
   
 /* links
 ----------------------------------------------------------------------------------------*/
-a { color: rgb(242,208,145); }
+a { 
+  color: rgba(47,41,38,1);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(236,64,121,1);
+  padding: 1px 2px 1px 2px;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+}
+
+a:hover, .navbar a.brand:hover, ul.nav a:hover {
+  background: rgba(236,64,121,1);
+  color: white;
+  text-decoration: none;
+}
 
 /* Layout, alignment, etc.
 ----------------------------------------------------------------------------------------*/
-#wrapper { margin: 100px; }
 h1 { margin-bottom: 30px;}
-#footer { margin-top: 100px; }
+footer { margin-top: 100px; }
 
 /* object colors & backgrounds
 ----------------------------------------------------------------------------------------*/
