@@ -88,10 +88,10 @@
             "strategy": "Change nothing and continue with immaculate consistency."
         },
         {
-            "strategy": "Children’s voices: speaking."
+            "strategy": "Children’s voices speaking."
         },
         {
-            "strategy": "Children’s voices: singing."
+            "strategy": "Children’s voices singing."
         },
         {
             "strategy": "Cluster analysis."
@@ -529,6 +529,18 @@
             "strategy": "Water."
         },
         {
+            "strategy": "Fire."
+        },
+        {
+            "strategy": "Earth."
+        },
+        {
+            "strategy": "Wind."
+        },
+        {
+            "strategy": "Heart."
+        },
+        {
             "strategy": "What are the sections sections of? (Imagine a caterpillar moving)."
         },
         {
@@ -571,7 +583,13 @@
             "strategy": "What wouldn’t you do? Do that."
         },
         {
+            "strategy": "When is it for?"
+        },
+        {
             "strategy": "When is it for? Who is it for?"
+        },
+        {
+            "strategy": "Who is it for?"
         },
         {
             "strategy": "Where is the edge?"
@@ -587,6 +605,9 @@
         },
         {
             "strategy": "Would anyone want it?"
+        },
+        {
+            "strategy": "Ask a computer program to do that."
         },
         {
             "strategy": "You are an engineer."
