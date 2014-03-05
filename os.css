@@ -50,6 +50,7 @@ header {
   margin-bottom: 30px;
   padding-bottom: 10px;
   border-bottom: 5px solid rgba(236,64,121,1);
+  position: relative;
 }
 
 footer { margin-top: 100px; }
@@ -88,6 +89,12 @@ body.random { height: 93%; }
 }
 
 #oblique_strategies { cursor: pointer; }
+
+p.altview {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
  
 /* The ghost, nudged to maintain perfect centering */
 .outer:before {
