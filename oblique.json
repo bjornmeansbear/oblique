@@ -79,13 +79,13 @@
             "strategy": "Change ambiguities to specifics."
         },
         {
+            "strategy": "Change specifics to ambiguities."
+        },
+        {
             "strategy": "Change instrument roles."
         },
         {
             "strategy": "Change nothing and continue with immaculate consistency."
-        },
-        {
-            "strategy": "Change specifics to ambiguities."
         },
         {
             "strategy": "Children’s voices: speaking."
@@ -193,55 +193,52 @@
             "strategy": "Don’t stress one thing more than another."
         },
         {
-            "strategy": "Emphasize differences"
+            "strategy": "Emphasize differences."
         },
         {
-            "strategy": "Emphasize repetitions"
+            "strategy": "Emphasize repetitions."
         },
         {
-            "strategy": "Emphasize the flaws"
+            "strategy": "Emphasize the flaws."
         },
         {
-            "strategy": "Faced with a choice, do both"
+            "strategy": "Faced with a choice, do both!"
         },
         {
-            "strategy": "Feed the recording back out of the medium"
+            "strategy": "Feed the recording back out of the medium."
         },
         {
-            "strategy": "Feedback recordings into an acoustic situation"
+            "strategy": "Feedback recordings into an acoustic situation."
         },
         {
-            "strategy": "Fill every beat with something"
-        },
-        {
-            "strategy": "Find a safe part and use it as an anchor"
+            "strategy": "Fill every beat with something."
         },
         {
             "strategy": "First work alone, then work in unusual pairs."
         },
         {
-            "strategy": "From nothing to more than nothing"
+            "strategy": "From nothing to more than nothing."
         },
         {
-            "strategy": "Get your neck massaged"
+            "strategy": "Get your neck massaged."
         },
         {
-            "strategy": "Ghost echoes"
+            "strategy": "Ghost echoes."
         },
         {
-            "strategy": "Give the game away"
+            "strategy": "Give the game away."
         },
         {
-            "strategy": "Give way to your worst impulse"
+            "strategy": "Give way to your worst impulse."
         },
         {
             "strategy": "Go outside. Shut the door."
         },
         {
-            "strategy": "Go slowly all the way round the outside"
+            "strategy": "Go slowly all the way round the outside."
         },
         {
-            "strategy": "Go to an extreme, move back to a more comfortable place"
+            "strategy": "Go to an extreme, move back to a more comfortable place."
         },
         {
             "strategy": "How would someone else do it?"
@@ -256,28 +253,37 @@
             "strategy": "Humanize something that is free of error."
         },
         {
-            "strategy": "Idiot glee (?)"
+            "strategy": "Idiot glee."
         },
         {
-            "strategy": "Imagine the music as a moving chain or caterpillar"
+            "strategy": "Imagine the music as a moving chain or caterpillar."
         },
         {
-            "strategy": "Imagine the music as a series of disconnected events"
+            "strategy": "Imagine the music as a series of disconnected events."
         },
         {
-            "strategy": "In total darkness, or in a very large room, very quietly"
+            "strategy": "In total darkness."
         },
         {
-            "strategy": "Infinitesimal gradations"
+            "strategy": "In a very large room, very quietly."
+        },
+        {
+            "strategy": "Infinitesimal gradations."
         },
         {
             "strategy": "Instead of changing the thing, change the world around it."
         },
         {
-            "strategy": "Intentions -credibility of -nobility of -humility of"
+            "strategy": "Credibility of intentions."
         },
         {
-            "strategy": "Into the impossible"
+            "strategy": "Nobility of intentions."
+        },
+        {
+            "strategy": "Humility of intentions."
+        },
+        {
+            "strategy": "Into the impossible."
         },
         {
             "strategy": "Is it finished?"
@@ -295,235 +301,235 @@
             "strategy": "Is the tuning appropriate?"
         },
         {
-            "strategy": "Is the tuning intonation correct?"
+            "strategy": "It is quite possible (after all)."
         },
         {
-            "strategy": "Is there something missing?"
+            "strategy": "It is simply a matter or work."
         },
         {
-            "strategy": "It is quite possible (after all)"
+            "strategy": "Just carry on."
         },
         {
-            "strategy": "It is simply a matter or work"
+            "strategy": "Left channel, right channel, centre channel."
         },
         {
-            "strategy": "Just carry on"
+            "strategy": "List the qualities it has. List those you’d like."
         },
         {
-            "strategy": "Left channel, right channel, centre channel"
+            "strategy": "Listen in total darkness."
         },
         {
-            "strategy": "List the qualities it has. List those you&#8217;d like."
-        },
-        {
-            "strategy": "Listen in total darkness, or in a very large room, very quietly"
+            "strategy": "Listen in a very large room, very quietly."
         },
         {
             "strategy": "Listen to the quiet voice"
         },
         {
-            "strategy": "Look at a very small object, look at its centre"
+            "strategy": "Look at a very small object, look at its centre."
         },
         {
-            "strategy": "Look at the order in which you do things"
+            "strategy": "Look at the order in which you do things."
         },
         {
             "strategy": "Look closely at the most embarrassing details and amplify."
         },
         {
-            "strategy": "Lost in useless territory"
+            "strategy": "Lost in useless territory."
         },
         {
-            "strategy": "Lowest common denominator check: -single beat -single note -single riff"
+            "strategy": "Lowest common denominator check: single beat; single note; single riff."
         },
         {
-            "strategy": "Magnify the most difficult details"
+            "strategy": "Magnify the most difficult details."
         },
         {
-            "strategy": "Make a blank valuable by putting it in an excquisite frame"
+            "strategy": "Make a blank valuable by putting it in an excquisite frame."
         },
         {
-            "strategy": "Make a sudden, destructive unpredictable action; incorporate"
+            "strategy": "Make a sudden, destructive unpredictable action. Incorporate."
         },
         {
-            "strategy": "Make an exhaustive list of everything you might do and do the last thing on the list"
+            "strategy": "Make an exhaustive list of everything you might do and do the last thing on the list."
         },
         {
-            "strategy": "Make it more sensual"
+            "strategy": "Make it more sensual."
         },
         {
-            "strategy": "Make what&#8217;s perfect more human"
+            "strategy": "Make what’s perfect more human."
         },
         {
-            "strategy": "Mechanize something idiosyncratic"
+            "strategy": "Mechanize something idiosyncratic."
         },
         {
-            "strategy": "Move towards the unimportant"
+            "strategy": "Move towards the unimportant."
         },
         {
-            "strategy": "Mute and continue"
+            "strategy": "Mute and continue."
         },
         {
-            "strategy": "Not building a wall but making a brick"
+            "strategy": "Not building a wall but making a brick."
         },
         {
-            "strategy": "Once the search has begun, something will be found"
+            "strategy": "Once the search has begun, something will be found."
         },
         {
-            "strategy": "Only a part, not the whole"
+            "strategy": "Only a part, not the whole."
         },
         {
-            "strategy": "Only one element of each kind"
+            "strategy": "Only one element of each kind."
         },
         {
-            "strategy": "Overtly resist change"
+            "strategy": "Overtly resist change."
         },
         {
-            "strategy": "Pae White&#8217;s non-blank graphic metacard"
+            "strategy": "Pae White’s non-blank graphic metacard."
         },
         {
-            "strategy": "Pay attention to distractions"
+            "strategy": "Pay attention to distractions."
         },
         {
-            "strategy": "Picture of a man spotlighted"
+            "strategy": "Picture of a man spotlighted."
         },
         {
-            "strategy": "Put in earplugs"
+            "strategy": "Put in earplugs."
         },
         {
-            "strategy": "Question the heroic approach"
+            "strategy": "Question the heroic approach."
         },
         {
-            "strategy": "Remember those quiet evenings"
+            "strategy": "Remember those quiet evenings."
         },
         {
-            "strategy": "Remove a restriction"
+            "strategy": "Remove a restriction."
         },
         {
-            "strategy": "Remove ambiguities and convert to specifics"
+            "strategy": "Remove ambiguities and convert to specifics."
         },
         {
-            "strategy": "Remove specifics and convert to ambiguities"
+            "strategy": "Remove specifics and convert to ambiguities."
         },
         {
-            "strategy": "Remove the middle, extend the edges"
+            "strategy": "Remove the middle, extend the edges."
         },
         {
-            "strategy": "Repetition is a form of change"
+            "strategy": "Repetition is a form of change."
         },
         {
-            "strategy": "Retrace your steps"
+            "strategy": "Retrace your steps."
         },
         {
-            "strategy": "Revaluation (a warm feeling)"
+            "strategy": "Revaluation (a warm feeling)."
         },
         {
-            "strategy": "Reverse"
+            "strategy": "Reverse."
         },
         {
-            "strategy": "Short circuit (example; a man eating peas with the idea that they will improve his virility shovels them straight into his lap)"
+            "strategy": "Short circuit (example; a man eating peas with the idea that they will improve his virility shovels them straight into his lap)."
         },
         {
-            "strategy": "Shut the door and listen from outside"
+            "strategy": "Shut the door and listen from outside."
         },
         {
-            "strategy": "Simple subtraction"
+            "strategy": "Simple subtraction."
         },
         {
-            "strategy": "Simply a matter of work"
+            "strategy": "Simply a matter of work."
         },
         {
-            "strategy": "Slow preparation, fast execution"
+            "strategy": "Slow preparation, fast execution."
         },
         {
-            "strategy": "Spectrum analysis"
+            "strategy": "Spectrum analysis."
         },
         {
-            "strategy": "State the problem in words as simply as possible"
+            "strategy": "State the problem in words as simply as possible."
         },
         {
             "strategy": "Steal a solution."
         },
         {
-            "strategy": "Take a break"
+            "strategy": "Take a break."
         },
         {
             "strategy": "Take away as much mystery as possible. What is left?"
         },
         {
-            "strategy": "Take away the elements in order of apparent non-importance"
+            "strategy": "Take away the elements in order of apparent non-importance."
         },
         {
-            "strategy": "Take away the important parts"
+            "strategy": "Take away the important parts."
         },
         {
-            "strategy": "Tape your mouth"
+            "strategy": "Tape your mouth."
         },
         {
-            "strategy": "The inconsistency principle"
+            "strategy": "The inconsistency principle."
         },
         {
-            "strategy": "The most important thing is the thing most easily forgotten"
+            "strategy": "The most important thing is the thing most easily forgotten."
         },
         {
-            "strategy": "The tape is now the music"
+            "strategy": "The tape is now the music."
         },
         {
-            "strategy": "Think: -inside the work -outside the work"
+            "strategy": "Think inside the work."
         },
         {
-            "strategy": "Think of the radio"
+            "strategy": "Think outside the work."
         },
         {
-            "strategy": "Tidy up"
+            "strategy": "Think of the radio."
         },
         {
-            "strategy": "Towards the insignificant"
+            "strategy": "Tidy up."
         },
         {
-            "strategy": "Trust in the you of now"
+            "strategy": "Towards the insignificant."
         },
         {
-            "strategy": "Try faking it"
+            "strategy": "Trust in the you of now."
         },
         {
-            "strategy": "Turn it upside down"
+            "strategy": "Try faking it."
         },
         {
-            "strategy": "Twist the spine"
+            "strategy": "Turn it upside down."
         },
         {
-            "strategy": "Use &#8220;unqualified&#8221; people."
+            "strategy": "Twist the spine."
         },
         {
-            "strategy": "Use an old idea"
+            "strategy": "Use “unqualified” people."
         },
         {
-            "strategy": "Use an unacceptable color"
+            "strategy": "Use an old idea."
         },
         {
-            "strategy": "Use cliches"
+            "strategy": "Use an unacceptable color."
         },
         {
-            "strategy": "Use fewer notes"
+            "strategy": "Use cliches."
         },
         {
-            "strategy": "Use filters"
+            "strategy": "Use fewer notes."
         },
         {
-            "strategy": "Use something nearby as a model"
+            "strategy": "Use filters."
         },
         {
-            "strategy": "Use your own ideas"
+            "strategy": "Use something nearby as a model."
         },
         {
-            "strategy": "Voice your suspicions"
+            "strategy": "Use your own ideas."
         },
         {
-            "strategy": "Water"
+            "strategy": "Voice your suspicions."
         },
         {
-            "strategy": "What are the sections sections of? Imagine a caterpillar moving"
+            "strategy": "Water."
+        },
+        {
+            "strategy": "What are the sections sections of? (Imagine a caterpillar moving)."
         },
         {
             "strategy": "What context would look right?"
@@ -550,10 +556,10 @@
             "strategy": "What to increase? What to reduce? What to maintain?"
         },
         {
-            "strategy": "What were the branch points in the evolution of this entity"
+            "strategy": "What were the branch points in the evolution of this entity?"
         },
         {
-            "strategy": "What were you really thinking about just now? Incorporate"
+            "strategy": "What were you really thinking about just now? Incorporate."
         },
         {
             "strategy": "What would make this really successful?"
@@ -562,7 +568,7 @@
             "strategy": "What would your closest friend do?"
         },
         {
-            "strategy": "What wouldn&#8217;t you do?"
+            "strategy": "What wouldn’t you do? Do that."
         },
         {
             "strategy": "When is it for? Who is it for?"
@@ -577,22 +583,22 @@
             "strategy": "Who would make this really successful?"
         },
         {
-            "strategy": "Work at a different speed"
+            "strategy": "Work at a different speed."
         },
         {
             "strategy": "Would anyone want it?"
         },
         {
-            "strategy": "You are an engineer"
+            "strategy": "You are an engineer."
         },
         {
-            "strategy": "You can only make one dot at a time"
+            "strategy": "You can only make one dot at a time."
         },
         {
-            "strategy": "You Don’t have to be ashamed of using your own ideas"
+            "strategy": "You don’t have to be ashamed of using your own ideas"
         },
         {
-            "strategy": "Your mistake was a hidden intention"
+            "strategy": "Your mistake was a hidden intention."
         }
     ]
 }
