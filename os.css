@@ -53,9 +53,10 @@ header {
   position: relative;
 }
 
-.listing header { padding-top: 30px; }
+.listing header { padding-top: 30px; margin-bottom: 0; }
 
 footer { margin-top: 100px; }
+
 .listing footer {margin-bottom: 30px;}
 
 /* object colors & backgrounds
@@ -97,10 +98,6 @@ p.altview {
   bottom: 10px;
   right: 15px;
 }
-
-ol {
-  padding: 0;
-}
  
 /* The ghost, nudged to maintain perfect centering */
 .outer:before {
@@ -118,4 +115,27 @@ ol {
   vertical-align: middle;
   width: 99%;
   margin-left: .5%;
+}
+
+/**** listing styles ****/
+
+#fulllist {
+  margin: 0 -15px;
+  padding: 0;
+  list-style-position:inside;
+  font-size: 1.5em;
+}
+
+#fulllist li {
+  border-bottom: 1px solid rgba(96,103,103,1);
+  padding: 0 15px;
+}
+
+#fulllist li p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+#fulllist li:hover {
+  background: rgba(157,178,176,.25);
 }
