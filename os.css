@@ -6,27 +6,35 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   color: rgba(47,41,38,1);
 }
-  
+
 h1 {
-  font-size: 150%;
+  font-size: 1.333333rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-bottom: 0;
+  padding-left: .25rem;
 }
-  
+
+.listing h1 {
+  margin-bottom: 0 !important;
+  padding-left: 1rem;
+}
+
 #oblique_strategies p {
-  font-size: 400%;
+  font-size: 4em;
   font-weight: bold;
-  color: rgba(197,192,101,1);  
+  color: rgba(197,192,101,1);
+  line-height: 1;
 }
-  
+
 footer  p {
   font-size: 90%;
 }
-  
+
 /* links
 ----------------------------------------------------------------------------------------*/
-a { 
+a {
   color: rgba(47,41,38,1);
   text-decoration: none;
   border-bottom: 1px solid rgba(236,64,121,1);
@@ -46,59 +54,90 @@ a:hover, .navbar a.brand:hover, ul.nav a:hover {
 
 /* Layout, alignment, etc.
 ----------------------------------------------------------------------------------------*/
+* { box-sizing: border-box; }
+
 header {
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  border-bottom: 5px solid rgba(236,64,121,1);
+  margin-bottom: 2rem;
+  padding-bottom: .75rem;
+  border-bottom: .333333rem solid rgba(236,64,121,1);
   position: relative;
 }
 
-.listing header { padding-top: 30px; margin-bottom: 0; }
+.listing header { padding-top: 2rem; margin-bottom: 0; }
 
-footer { margin-top: 100px; }
-
-.listing footer {margin-bottom: 30px;}
+footer { margin-top: 2rem; margin-bottom: 2rem; }
 
 /* object colors & backgrounds
 ----------------------------------------------------------------------------------------*/
-html {
-  background: rgba(96,103,103,1);
+html,
+body {
+  background: rgba(132,132,120,1);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
-  min-height: 101%;
-  height: 101%;
-}
-
-html.random { height: 101%; }
-
-body {
-  background: rgba(132,132,120,1);
-  border: 2px solid rgba(47,41,38,1);
-  margin: 2%;
+  margin:0;
   padding: 0;
-  min-height: 93%;
+  min-height: 100vh;
 }
 
-body.random { height: 93%; }
+.cool-border {
+  pointer-events: none;
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
-.container { height: 100%; }
+.cool-border.thick {
+  border: 2rem solid rgba(96,103,103,1);
+}
+
+.cool-border.thin {
+  border: 2px solid rgba(47,41,38,1);
+  top: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+body.random,
+.container {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+#oblique_strategies {
+  cursor: pointer;
+  margin-bottom: 9rem;
+}
+
+p.altview {
+  position: absolute;
+  bottom: .75rem;
+  right: .25rem;
+}
+
+.listing p.altview {
+  right: 1rem;
+}
+
+article { margin-top: 1rem; margin-bottom: 2rem;}
+
+article .lead {
+  font-weight: 400;
+  line-height: 1.444;
+  opacity: .8;
+}
 
 .outer {
   width: 100%;
   height: 100%;
 }
 
-#oblique_strategies { cursor: pointer; }
-
-p.altview {
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
-}
- 
 /* The ghost, nudged to maintain perfect centering */
 .outer:before {
   content: '';
@@ -109,7 +148,7 @@ p.altview {
 }
 
 /* The element to be centered, can
-   also be of any width and height */ 
+   also be of any width and height */
 .inner {
   display: inline-block;
   vertical-align: middle;
@@ -120,20 +159,22 @@ p.altview {
 /**** listing styles ****/
 
 #fulllist {
-  margin: 0 -15px;
+  border-top: 1px solid rgba(96,103,103,1);
+  margin: 1rem -1rem;
   padding: 0;
-  list-style-position:inside;
   font-size: 1.5em;
 }
 
 #fulllist li {
+  list-style-position:inside !important;
+  list-style:decimal;
   border-bottom: 1px solid rgba(96,103,103,1);
-  padding: 0 15px;
+  padding: 0 1.333333rem;
 }
 
 #fulllist li p {
   margin: 0;
-  padding: 1em 0;
+  padding: .6em 0;
 }
 
 #fulllist li:hover {
