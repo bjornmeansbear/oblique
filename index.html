@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" class="random">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>An Oblique Strategy:</title>
 
-    <!-- Bootstrap -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="structure.css">
-    <link rel="stylesheet" href="os.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>An Oblique Strategy:</title>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body class="random">
-    <div class="container">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="structure.css">
+  <link rel="stylesheet" href="os.css">
+</head>
 
-      <div class="outer">
-        <div class="inner">
-          <header>
-            <h1>A Random Oblique Strategy</h1>
-            <p class="altview"><a href="list.html">View All</a></p>
-          </header>
+<body class="random">
+  <div class="container">
 
-          <div id='oblique_strategies'>
-            <p>A Random Strategy Here.</p>
-          </div>
+    <div class="outer">
+      <div class="inner">
+        <header>
+          <h1>A Random Oblique Strategy</h1>
+          <p class="altview"><a href="list.html">View All</a></p>
+        </header>
 
-          <footer>
-            <p>&copy; 1975-2015 Brian Eno and Peter Schmidt. This list is compiled from all the available Oblique Strategies.</p>
-            <p>Some entries have been subtly edited, some entries omitted, and some entries duplicated with slightly different wordings. Enjoy.</p>
-            <p>An <a href="http://www.ookb.co/">Office of Kristian Bjørnard</a> project</p>
-          </footer>
-        </div>
+        <main>
+          <button type="button" id="oblique_strategies" aria-live="polite" aria-describedby="oblique_hint">
+            <span>Loading a strategy&hellip;</span>
+          </button>
+          <p id="oblique_hint" class="visually-hidden">Press to see another strategy.</p>
+        </main>
+
+        <footer>
+          <p>&copy; 1975-2026 Brian Eno and Peter Schmidt. This list is compiled from all the available Oblique
+            Strategies.</p>
+          <p>Some entries have been subtly edited, some entries omitted, and some entries duplicated with slightly
+            different wordings. Enjoy.</p>
+          <p>This is just meant to be a fun way to experience the strategies</p>
+          <p>Type is <a href="https://velvetyne.fr/fonts/basteleur/">Basteleur</a> and <a href="https://velvetyne.fr/fonts/sligoil/">Sligoil</a>, both from <a href="https://velvetyne.fr/">Velvetyne</a></p>
+          <p>A <a href="https://a.wjerk.shop/">Wjerk</a> project</p>
+        </footer>
       </div>
-
     </div>
 
-    <div class="cool-border thick"></div>
-    <div class="cool-border thin"></div>
+  </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="os.js"></script>
+  <div class="cool-border thick"></div>
+  <div class="cool-border thin"></div>
 
-  </body>
+  <script src="os.js" defer></script>
+
+</body>
+
 </html>

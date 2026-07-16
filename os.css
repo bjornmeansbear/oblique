@@ -1,10 +1,56 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,300,600");
+/* Self-hosted webfonts, both from Velvetyne Type Foundry (OFL-1.1,
+   license text kept alongside the font files in /fonts).
+   Basteleur is tarot-card-inspired — used for the strategy text.
+   Sligoil is a monospace inktrap face — used for everything else. */
+@font-face {
+  font-family: 'Basteleur';
+  src: url('fonts/Basteleur-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sligoil Micro';
+  src: url('fonts/Sligoil-Micro.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sligoil Micro';
+  src: url('fonts/Sligoil-MicroMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sligoil Micro';
+  src: url('fonts/Sligoil-MicroBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Original OOKB brand colors, plus AA-passing steps pulled from the
+   personal color ramp in color-system-and-guidelines (--yellow-0,
+   --brown-8, --pink-5) instead of inventing one-off values. */
+:root {
+  --color-bg: rgba(132,132,120,1);       /* @ookb-gray, unchanged */
+  --color-text: rgb(25,21,19);           /* --brown-8, 4.8:1 on bg */
+  --color-strategy: rgb(254,251,187);    /* --yellow-0, 3.55:1 on bg */
+  --color-accent: rgba(236,64,121,1);    /* @ookb-pink, decorative only */
+  --color-accent-hover: rgb(214,0,97);   /* --pink-5, 5.2:1 for white text */
+  --color-frame: rgba(96,103,103,1);     /* @ookb-darkgray, decorative only */
+}
 
 /* Typography styles and colors
 ----------------------------------------------------------------------------------------*/
 body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  color: rgba(47,41,38,1);
+  font-family: 'Sligoil Micro', 'Courier New', monospace;
+  color: var(--color-text);
 }
 
 h1 {
@@ -21,35 +67,59 @@ h1 {
   padding-left: 1rem;
 }
 
-#oblique_strategies p {
-  font-size: 4em;
-  font-weight: bold;
-  color: rgba(197,192,101,1);
-  line-height: 1;
+#oblique_strategies span {
+  display: block;
+  font-family: 'Basteleur', 'Sligoil Micro', monospace;
+  font-size: clamp(2rem, 9vw, 4em);
+  font-weight: 700;
+  color: var(--color-strategy);
+  line-height: 1.1;
+  overflow-wrap: break-word;
 }
 
 footer  p {
   font-size: 90%;
 }
 
+/* accessibility helpers
+----------------------------------------------------------------------------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
 /* links
 ----------------------------------------------------------------------------------------*/
 a {
-  color: rgba(47,41,38,1);
+  color: var(--color-text);
   text-decoration: none;
-  border-bottom: 1px solid rgba(236,64,121,1);
+  border-bottom: 1px solid var(--color-accent);
   padding: 1px 2px 1px 2px;
   transition: all 500ms;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -o-transition: all 500ms;
-  -ms-transition: all 500ms;
 }
 
-a:hover, .navbar a.brand:hover, ul.nav a:hover {
-  background: rgba(236,64,121,1);
+a:hover {
+  background: var(--color-accent-hover);
   color: white;
   text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+  }
 }
 
 /* Layout, alignment, etc.
@@ -57,10 +127,14 @@ a:hover, .navbar a.brand:hover, ul.nav a:hover {
 * { box-sizing: border-box; }
 
 header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .5rem 1rem;
   margin-bottom: 2rem;
   padding-bottom: .75rem;
-  border-bottom: .333333rem solid rgba(236,64,121,1);
-  position: relative;
+  border-bottom: .333333rem solid var(--color-accent);
 }
 
 .listing header { padding-top: 2rem; margin-bottom: 0; }
@@ -71,7 +145,7 @@ footer { margin-top: 2rem; margin-bottom: 2rem; }
 ----------------------------------------------------------------------------------------*/
 html,
 body {
-  background: rgba(132,132,120,1);
+  background: var(--color-bg);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-hyphens: auto;
@@ -80,6 +154,7 @@ body {
   margin:0;
   padding: 0;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .cool-border {
@@ -93,36 +168,65 @@ body {
 }
 
 .cool-border.thick {
-  border: 2rem solid rgba(96,103,103,1);
+  border: clamp(.75rem, 4vw, 2rem) solid var(--color-frame);
 }
 
 .cool-border.thin {
-  border: 2px solid rgba(47,41,38,1);
-  top: 2rem;
-  right: 2rem;
-  bottom: 2rem;
-  left: 2rem;
+  border: 2px solid var(--color-text);
+  top: clamp(.75rem, 4vw, 2rem);
+  right: clamp(.75rem, 4vw, 2rem);
+  bottom: clamp(.75rem, 4vw, 2rem);
+  left: clamp(.75rem, 4vw, 2rem);
 }
 
 body.random,
 .container {
   min-height: 100vh;
+  min-height: 100dvh;
   height: 100vh;
+  height: 100dvh;
 }
 
 #oblique_strategies {
+  display: block;
+  width: 100%;
+  margin: 0 0 4rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: left;
   cursor: pointer;
-  margin-bottom: 9rem;
+}
+
+@media (min-width: 30rem) {
+  #oblique_strategies {
+    margin-bottom: 9rem;
+  }
 }
 
 p.altview {
-  position: absolute;
-  bottom: .75rem;
-  right: .25rem;
+  margin: 0;
 }
 
-.listing p.altview {
-  right: 1rem;
+p.altview a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .5rem 1.25rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+  font-size: .8125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  line-height: 1;
+}
+
+p.altview a:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
 }
 
 article { margin-top: 1rem; margin-bottom: 2rem;}
@@ -134,42 +238,45 @@ article .lead {
 }
 
 .outer {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
 
-/* The ghost, nudged to maintain perfect centering */
-.outer:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -1%; /* Adjusts for spacing */
-}
-
-/* The element to be centered, can
-   also be of any width and height */
 .inner {
-  display: inline-block;
-  vertical-align: middle;
-  width: 99%;
-  margin-left: .5%;
+  width: 100%;
+  min-width: 0;
 }
 
 /**** listing styles ****/
 
 #fulllist {
-  border-top: 1px solid rgba(96,103,103,1);
-  margin: 1rem -1rem;
+  border-top: 1px solid var(--color-frame);
+  margin: 1rem calc(-1 * clamp(1.25rem, 6vw, 2rem));
   padding: 0;
-  font-size: 1.5em;
+  font-size: clamp(1.1em, 3.5vw, 1.5em);
+  list-style: none;
+  counter-reset: strategy;
 }
 
+/* Generated counter instead of a native list marker: a native marker
+   with list-style-position:inside breaks onto its own line above the
+   li's block-level <p> child; outside shrinks the li's box so the
+   border-bottom no longer spans full width. A counter on the li itself
+   sidesteps both — the li stays a normal full-width flex box. */
 #fulllist li {
-  list-style-position:inside !important;
-  list-style:decimal;
-  border-bottom: 1px solid rgba(96,103,103,1);
+  counter-increment: strategy;
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  border-bottom: 1px solid var(--color-frame);
   padding: 0 1.333333rem;
+}
+
+#fulllist li::before {
+  content: counter(strategy) ".";
+  flex: none;
 }
 
 #fulllist li p {

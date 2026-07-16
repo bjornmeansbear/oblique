@@ -20,7 +20,7 @@ html, body {
 /* columnar stuff */
 .container {
   margin: 0 auto;
-  padding: 0 1rem 2rem 1rem;
+  padding: 0 clamp(1.25rem, 6vw, 2rem) 2rem;
   width: 100%;
 }
 
