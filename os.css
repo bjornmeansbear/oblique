@@ -54,7 +54,21 @@
 
 html, body { margin: 0; padding: 0; }
 
+/* Stops mobile browsers (mainly Android Chrome) auto-inflating font sizes
+   in narrow columns — we're already doing our own fluid sizing via
+   clamp(), so the browser second-guessing it on top isn't wanted. */
+html {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 h1, p { margin: 0; }
+
+/* Balanced wrapping: h1 does wrap to two lines on narrow screens, and
+   paragraph copy (footer, list intro) reads better without orphans. */
+h1 { text-wrap: balance; }
+p { text-wrap: pretty; }
 
 /* Typography & color
 ----------------------------------------------------------------------------------------*/
@@ -95,6 +109,7 @@ h1 {
   color: var(--color-text);
   line-height: 1.1;
   overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 @media (min-width: 30rem) {
