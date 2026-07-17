@@ -43,14 +43,29 @@
   --color-strategy: rgb(254,251,187);    /* --yellow-0, 3.55:1 on bg */
   --color-accent: rgba(236,64,121,1);    /* @ookb-pink, decorative only */
   --color-accent-hover: rgb(214,0,97);   /* --pink-5, 5.2:1 for white text */
-  --color-frame: rgba(96,103,103,1);     /* @ookb-darkgray, decorative only */
+  --color-frame-rgb: 96,103,103;         /* @ookb-darkgray channels, shared with the shadow below */
+  --color-frame: rgba(var(--color-frame-rgb),1);
 }
 
-/* Typography styles and colors
+/* Reset — this site only ever uses the elements below, so there's no need
+   for a full generic reset (form fields, tables, media elements, etc.
+   never appear here). */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+h1, p { margin: 0; }
+
+/* Typography & color
 ----------------------------------------------------------------------------------------*/
 body {
   font-family: 'Sligoil Micro', 'Courier New', monospace;
   color: var(--color-text);
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  hyphens: auto;
+  background: var(--color-bg);
 }
 
 h1 {
@@ -58,26 +73,43 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 0;
   padding-left: .25rem;
 }
 
 .listing h1 {
-  margin-bottom: 0 !important;
   padding-left: 1rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.444;
+  opacity: .8;
 }
 
 #oblique_strategies span {
   display: block;
-  font-family: 'Basteleur', 'Sligoil Micro', monospace;
-  font-size: clamp(2rem, 9vw, 4em);
+  font-family: 'Basteleur', serif;
+  font-size: clamp(1.25rem, 6vw, 3em);
   font-weight: 700;
-  color: var(--color-strategy);
+  color: var(--color-text);
   line-height: 1.1;
   overflow-wrap: break-word;
 }
 
-footer  p {
+@media (min-width: 30rem) {
+  #oblique_strategies span {
+    font-size: clamp(2rem, 8vw, 4em);
+  }
+}
+
+@media (min-width: 50rem) {
+  #oblique_strategies span {
+    font-size: clamp(2rem, 9vw, 5em);
+  }
+}
+
+footer p {
   font-size: 90%;
 }
 
@@ -106,14 +138,13 @@ a {
   color: var(--color-text);
   text-decoration: none;
   border-bottom: 1px solid var(--color-accent);
-  padding: 1px 2px 1px 2px;
+  padding: 1px 2px;
   transition: all 500ms;
 }
 
 a:hover {
   background: var(--color-accent-hover);
   color: white;
-  text-decoration: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -122,41 +153,67 @@ a:hover {
   }
 }
 
-/* Layout, alignment, etc.
+/* Layout
 ----------------------------------------------------------------------------------------*/
-* { box-sizing: border-box; }
+.container {
+  margin: 0 auto;
+  padding: clamp(2rem, 7vw, 5rem);
+  width: 100%;
+}
+
+@media (min-width: 30rem) {
+  .listing .container {
+    min-width: 30rem;
+    width: 80%;
+  }
+}
+
+@media (min-width: 50rem) {
+  .listing .container {
+    max-width: 75rem;
+  }
+}
+
+/* Only the random-strategy page (html/body.random) vertically centers its
+   content; the listing page flows top-down normally. */
+.random .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
 
 header {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  gap: .5rem 1rem;
-  margin-bottom: 2rem;
-  padding-bottom: .75rem;
+  order: 2;
+  flex: 1 50%;
+  flex-direction: column;
+}
+
+.listing header {
+    flex-direction: row;
+}
+
+.listing header {
+  padding-top: 2rem;
+  margin-bottom: 0;
   border-bottom: .333333rem solid var(--color-accent);
 }
 
-.listing header { padding-top: 2rem; margin-bottom: 0; }
+.listing footer { margin-top: 2rem; margin-bottom: 2rem; }
 
-footer { margin-top: 2rem; margin-bottom: 2rem; }
+/** control the layout a bit more to focus on the STRATEGIES **/
 
-/* object colors & backgrounds
-----------------------------------------------------------------------------------------*/
-html,
-body {
-  background: var(--color-bg);
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  margin:0;
-  padding: 0;
-  min-height: 100vh;
-  min-height: 100dvh;
-}
+main   { order: 1; flex: 2 100%; }
+footer { order: 3; flex: 1 50%}
 
+/** making the borders that match www.ookb.co too **/
+/** this might change in the spirit of the "wjerk" design ecosystem **/
 .cool-border {
   pointer-events: none;
   z-index: 500;
@@ -179,31 +236,47 @@ body {
   left: clamp(.75rem, 4vw, 2rem);
 }
 
-body.random,
-.container {
-  min-height: 100vh;
-  min-height: 100dvh;
-  height: 100vh;
-  height: 100dvh;
-}
-
 #oblique_strategies {
   display: block;
-  width: 100%;
-  margin: 0 0 4rem;
-  padding: 0;
-  border: 0;
-  background: none;
   font: inherit;
   text-align: left;
   cursor: pointer;
+  width: 100%;
+  margin: 0;
+  border: 1px solid var(--color-text);
+  background: var(--color-strategy);
+  min-height: 30vh;
+  padding: 2em;
+  transform: rotate(var(--card-rotation, 0deg));
+  box-shadow: 0 1rem 2rem rgba(var(--color-frame-rgb),.35); /* --color-frame, low alpha */
+  z-index: 999;
+  position: relative;
 }
 
-@media (min-width: 30rem) {
+header, footer {
+  padding-top: 4rem;
+}
+@media (min-width: 40rem) {
   #oblique_strategies {
-    margin-bottom: 9rem;
+    height: 40vh;
+    padding: 3em;
+  }
+  header, footer {
+    padding-top: 2rem;
   }
 }
+
+@media (min-width: 70rem) {
+  #oblique_strategies {
+    height: 50vh;
+    padding: 4em;
+  }
+  header, footer {
+    padding-top: 0;
+  }
+}
+
+
 
 p.altview {
   margin: 0;
@@ -229,37 +302,18 @@ p.altview a:hover {
   border-color: var(--color-accent-hover);
 }
 
-article { margin-top: 1rem; margin-bottom: 2rem;}
-
-article .lead {
-  font-weight: 400;
-  line-height: 1.444;
-  opacity: .8;
-}
-
-.outer {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.inner {
-  margin: 4vw;
-  min-width: 0;
-}
+article { margin-top: 1rem; margin-bottom: 2rem; }
 
 /**** listing styles ****/
 
 #fulllist {
   border-top: 1px solid var(--color-frame);
-  margin: 1rem calc(-1 * clamp(1.25rem, 6vw, 2rem));
+  margin: 0;
   padding: 0;
   font-size: clamp(1.1em, 3.5vw, 1.5em);
   list-style: none;
   counter-reset: strategy;
 }
-
 /* Generated counter instead of a native list marker: a native marker
    with list-style-position:inside breaks onto its own line above the
    li's block-level <p> child; outside shrinks the li's box so the
@@ -271,7 +325,6 @@ article .lead {
   align-items: baseline;
   gap: .5rem;
   border-bottom: 1px solid var(--color-frame);
-  padding: 0 1.333333rem;
 }
 
 #fulllist li::before {
@@ -280,7 +333,6 @@ article .lead {
 }
 
 #fulllist li p {
-  margin: 0;
   padding: .6em 0;
 }
 

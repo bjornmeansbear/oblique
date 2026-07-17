@@ -30,6 +30,11 @@
           } while (strategy === last && strategies.length > 1);
           last = strategy;
           text.textContent = strategy;
+
+          // A fresh random tilt each time too, like a card tossed onto a
+          // table — CSS reads this custom property to rotate the button.
+          var angle = (Math.random() * 14 - 7).toFixed(2); // -7deg to +7deg
+          randomButton.style.setProperty('--card-rotation', angle + 'deg');
         };
 
         showRandom(); // show one immediately on page load
