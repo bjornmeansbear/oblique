@@ -9,27 +9,35 @@
   fetch('oblique.json')
     .then(function (response) { return response.json(); })
     .then(function (data) {
-      // oblique.json looks like { strategies: [{ strategy: "..." }, ...] }
-      // — flatten it down to a plain array of strings, since that's all we
-      // actually need.
-      var strategies = data.strategies.map(function (s) { return s.strategy; });
+      // oblique.json looks like:
+      //   { strategies: [{ strategy: "...", explanation: "(...)" }, ...] }
+      // explanation is optional — only a handful of entries have one — so
+      // keep the whole object around instead of flattening to just the
+      // strategy string, the way this used to work.
+      var strategies = data.strategies;
 
       // --- index.html: the big clickable "give me a random strategy" button ---
       var randomButton = document.getElementById('oblique_strategies');
       if (randomButton) {
         var text = randomButton.querySelector('span');
+        var explanation = randomButton.querySelector('.explanation');
         var last = null;
 
         var showRandom = function () {
-          var strategy;
+          var entry;
           // Re-roll if we land on the same strategy twice in a row, so
           // clicking always feels like it did something (unless there's
           // only one strategy in the list, in which case just show it).
           do {
-            strategy = strategies[Math.floor(Math.random() * strategies.length)];
-          } while (strategy === last && strategies.length > 1);
-          last = strategy;
-          text.textContent = strategy;
+            entry = strategies[Math.floor(Math.random() * strategies.length)];
+          } while (entry === last && strategies.length > 1);
+          last = entry;
+          text.textContent = entry.strategy;
+
+          if (explanation) {
+            explanation.textContent = entry.explanation || '';
+            explanation.hidden = !entry.explanation;
+          }
 
           // A fresh random tilt each time too, like a card tossed onto a
           // table — CSS reads this custom property to rotate the button.
@@ -47,12 +55,21 @@
         // Building everything in a DocumentFragment first, then appending
         // it once, means the page only reflows once instead of 211 times.
         var fragment = document.createDocumentFragment();
-        strategies.forEach(function (strategy) {
+        strategies.forEach(function (entry) {
           var li = document.createElement('li');
           li.className = 'strategy';
           var p = document.createElement('p');
-          p.textContent = strategy; // textContent (not innerHTML) so nothing in
-          li.appendChild(p);        // the strategy text is ever parsed as markup
+          p.textContent = entry.strategy; // textContent (not innerHTML) so nothing
+          li.appendChild(p);               // in the strategy text is parsed as markup
+          if (entry.explanation) {
+            // Nested inside the <p> (not a sibling of it) so it stacks in
+            // the same flex column as the strategy text, instead of
+            // fighting the counter number for room on the row.
+            var small = document.createElement('small');
+            small.className = 'explanation';
+            small.textContent = entry.explanation;
+            p.appendChild(small);
+          }
           fragment.appendChild(li);
         });
         fullList.appendChild(fragment);

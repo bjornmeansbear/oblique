@@ -109,6 +109,26 @@ h1 {
   }
 }
 
+/* The optional addendum text some entries have (oblique.json's
+   "explanation" field) — a quiet footnote, not competing with the
+   strategy itself. 6.5:1 against the card at this opacity, still AA. */
+.explanation {
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  opacity: .7;
+}
+
+#oblique_strategies .explanation {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  margin-top: 1.5rem;
+}
+
+#fulllist li .explanation {
+  font-size: .7em;
+  margin-top: .25em;
+}
+
 footer p {
   font-size: 90%;
 }

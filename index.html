@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>An Oblique Strategy:</title>
 
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
   <link rel="stylesheet" href="os.css">
 </head>
 
@@ -20,6 +24,9 @@
     <main>
       <button type="button" id="oblique_strategies" aria-live="polite" aria-describedby="oblique_hint">
         <span>Loading a strategy&hellip;</span>
+        <!-- starts hidden since most strategies have no explanation;
+             os.js unhides it per-strategy when entry.explanation exists -->
+        <small class="explanation" hidden></small>
       </button>
       <p id="oblique_hint" class="visually-hidden">Press to see another strategy.</p>
     </main>

@@ -25,7 +25,8 @@
             "strategy": "Adding on."
         },
         {
-            "strategy": "Allow an easement (an easement is the abandonment of a stricture)."
+            "strategy": "Allow an easement.",
+            "explanation": "(an easement is the abandonment of a stricture)."
         },
         {
             "strategy": "Always give yourself credit for having more than personality."
@@ -439,7 +440,8 @@
             "strategy": "Reverse."
         },
         {
-            "strategy": "Short circuit (example; a man eating peas with the idea that they will improve his virility shovels them straight into his lap)."
+            "strategy": "Short circuit.",
+            "explanation": "(example; a man eating peas with the idea that they will improve his virility shovels them straight into his lap)."
         },
         {
             "strategy": "Shut the door and listen from outside."
@@ -556,7 +558,8 @@
             "strategy": "Heart."
         },
         {
-            "strategy": "What are the sections sections of? (Imagine a caterpillar moving)."
+            "strategy": "What are the sections sections of?",
+            "explanation": "(Imagine a caterpillar moving)."
         },
         {
             "strategy": "What context would look right?"
