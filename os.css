@@ -120,8 +120,23 @@ h1 {
 }
 
 #oblique_strategies .explanation {
-  font-size: clamp(1rem, 3vw, 1.25rem);
-  margin-top: 1.5rem;
+  font-size: .75rem;
+  margin-top: 1rem;
+}
+@media (min-width: 30rem) {
+  #oblique_strategies .explanation {
+    font-size: clamp(.75rem, 1vw, 1.125rem);
+    margin-top: 1.25rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  #oblique_strategies .explanation {
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    margin-top: 1.5rem;
+    max-width: 40em;
+    hyphens: none;
+  }
 }
 
 #fulllist li .explanation {

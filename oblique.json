@@ -7,7 +7,7 @@
             "strategy": "A line has two sides."
         },
         {
-            "strategy": "A very small object - Its centre."
+            "strategy": "A very small object; Its centre."
         },
         {
             "strategy": "Abandon desire."
@@ -350,7 +350,7 @@
             "strategy": "Magnify the most difficult details."
         },
         {
-            "strategy": "Make a blank valuable by putting it in an excquisite frame."
+            "strategy": "Make a blank valuable by putting it in an exquisite frame."
         },
         {
             "strategy": "Make a sudden, destructive unpredictable action. Incorporate."
@@ -580,7 +580,8 @@
             "strategy": "What mistakes did you make last time?"
         },
         {
-            "strategy": "What most recently impressed you? How is it similar? What can you learn from it? What could you take from it?"
+            "strategy": "What most recently impressed you?",
+            "explanation": "How is it similar? What can you learn from it? What could you take from it?"
         },
         {
             "strategy": "What to increase? What to reduce? What to maintain?"
