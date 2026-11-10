@@ -37,3 +37,12 @@ thank you Brian Eno & Peter Schmidt.
 ## Colophon
 
 Type is [Basteleur](https://velvetyne.fr/fonts/basteleur/) (Bold, for the strategy text — a tarot-card-inspired display face, which felt right for a deck of cards) and [Sligoil](https://velvetyne.fr/fonts/sligoil/) (Micro, for everything else — a monospace face with big ink traps), both free and open source from [Velvetyne Type Foundry](https://velvetyne.fr/). Self-hosted from `/fonts` under OFL-1.1, license text included there.
+
+## license
+
+the code (html, css, js) is [AGPL-3.0](LICENSE): use it, change it, share it. if you change it and run it as a website, share your changes too.
+
+not covered by that license:
+
+- **the strategies.** the text in `oblique.json`, `oblique.xml` and `oblique.yml` is © Brian Eno and Peter Schmidt. it's collected here as a fan's tribute, not licensed by me.
+- **the fonts.** Basteleur and Sligoil keep their own SIL Open Font License, in `fonts/`.
